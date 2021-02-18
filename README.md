@@ -1,3 +1,4 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/1wu8x3xtf80wcodq?svg=true)](https://ci.appveyor.com/project/shayu78/ra-filters)
 Портфолио с фильтрами
 ===
 
