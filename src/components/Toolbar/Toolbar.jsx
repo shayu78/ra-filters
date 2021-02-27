@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import cn from 'classnames';
 
 export default function Toolbar(props) {
   const { filters, selected, onSelectFilter } = props;
@@ -8,8 +9,8 @@ export default function Toolbar(props) {
     <div className="toolbar__wrapper">
       <ul className="toolbar__items">
         {filters.map((value) => {
-          const classes = (value === selected) ? 'toolbar__item active' : 'toolbar__item';
-          return <li key={value} className={classes} onClick={() => onSelectFilter(value)}>{value}</li>
+          return <li key={value} className={cn({ 'toolbar__item': true, 'active': value === selected })}
+            onClick={() => onSelectFilter(value)}>{value}</li>
         })}
       </ul>
     </div>
